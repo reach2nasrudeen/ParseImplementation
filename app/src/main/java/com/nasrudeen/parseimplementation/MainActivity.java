@@ -23,15 +23,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView = (TextView) findViewById(R.id.test);
-        Log.i("Test came --->","Came");
-//        Toast.makeText(getApplicationContext(),"Came ",Toast.LENGTH_SHORT).show();
         Parse.initialize(new Parse.Configuration.Builder(this)
                 .applicationId("app id")
                 .clientKey("client key")
                 .server("url").build()
         );
-        Log.i("Test came --->","Came 1");
-//        Toast.makeText(getApplicationContext(),"Came 1",Toast.LENGTH_SHORT).show();
 //        ParseObject testObject = new ParseObject("TestObject");
 //        testObject.put("foo", "bar");
 //        testObject.saveInBackground();
@@ -51,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
 ////                    textView.setText((CharSequence) postList);
 ////                    for (ParseObject post : postList) {
 ////                        Log.i("String --->", String.valueOf(postList));
-////
 ////                    }
 //                } else {
 //                    Log.d(getClass().getSimpleName(), "Error: " + e.getMessage());
