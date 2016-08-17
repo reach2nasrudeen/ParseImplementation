@@ -62,10 +62,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void done(List<ParseObject> objects, ParseException e) {
                 if (e == null) {
-                    Log.d("Brand", "Retrieved " + objects.size() + " Brands");
                     for (ParseObject dealsObject : objects) {
                         // use dealsObject.get('columnName') to access the properties of the Deals object.
-                        Log.i("Test came --->","Came 3");
                         Toast.makeText(getApplicationContext(),"Object -->"+dealsObject.getString("poster"),Toast.LENGTH_SHORT).show();
                         textView.append("\n"+dealsObject.getString("poster"));
                     }
