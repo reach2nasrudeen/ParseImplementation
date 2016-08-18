@@ -69,8 +69,7 @@ public class MainActivity extends AppCompatActivity {
 //                }
 //            }
 //        });
-
-
+        
         ParseQuery query = new ParseQuery("NewsAndOffers");
 
         query.findInBackground(new FindCallback<ParseObject>() {
@@ -107,7 +106,6 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     Log.d("Brand", "Error: " + e.getMessage());
                 }
-
             }
         });
 
