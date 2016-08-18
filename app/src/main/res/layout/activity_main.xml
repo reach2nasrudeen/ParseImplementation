@@ -17,14 +17,21 @@
             android:scaleType="fitXY"
             android:layout_width="match_parent"
             android:layout_height="200dp" />
-        <com.github.curioustechizen.ago.RelativeTimeTextView
+        <TextView
             android:layout_below="@id/imageView"
             android:layout_centerInParent="true"
             android:id="@+id/timestamp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:relative_time_prefix="Completed "
             android:layout_marginTop="25dp" />
+        <!--<com.github.curioustechizen.ago.RelativeTimeTextView-->
+            <!--android:layout_below="@id/imageView"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:id="@+id/timestamp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:relative_time_prefix="Completed "-->
+            <!--android:layout_marginTop="25dp" />-->
         <TextView
             android:layout_below="@id/timestamp"
             android:id="@+id/test"
